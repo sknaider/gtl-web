@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -12,8 +13,19 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <span className="text-3xl font-bold">
+          <Link href="/" className="flex items-center gap-3 group">
+            {/* Logo GTL */}
+            <div className="relative w-12 h-12 flex-shrink-0 transition-transform group-hover:scale-105">
+              <Image
+                src="/logo.png"
+                alt="GTL Consulting - Especialistas en Exportación de Valorados"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            {/* Texto */}
+            <span className="text-2xl sm:text-3xl font-bold">
               <span className="text-brand-primary">GTL</span>{" "}
               <span className="text-gray-900">Consulting</span>
             </span>
