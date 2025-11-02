@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
     const { data, error } = await resend.emails.send({
       from: 'GTL Consulting <contacto@gtl.pe>',
       to: 'operacionescallao@gtl.pe',
-      reply_to: body.correo, // Para que puedas responder directamente al cliente
+      replyTo: body.correo, // Para que puedas responder directamente al cliente
       subject: `Nueva Cotización de ${body.compania}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
