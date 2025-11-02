@@ -17,8 +17,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'GTL Consulting - ConsultorÃ­a en Comercio Exterior',
-  description: 'ConsultorÃ­a en Comercio Exterior con mÃ¡s de 22 aÃ±os de experiencia',
+  title: 'GTL Consulting - Consultoría en Comercio Exterior',
+  description: 'Consultoría en Comercio Exterior con más de 22 años de experiencia',
 }
 
 export default function RootLayout({
@@ -37,6 +37,9 @@ export default function RootLayout({
 
   return (
     <html lang="es" suppressHydrationWarning>
+      <head>
+        <meta name="google-site-verification" content="Kc4DddwSxmmxeJe9pLV83dAp7_NiJfGpwWzekKl9Af4" />
+      </head>
       <body className={bodyClassName}>
         {children}
         <WhatsAppWidget />
