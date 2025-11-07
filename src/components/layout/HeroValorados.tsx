@@ -102,7 +102,7 @@ export function HeroValorados() {
                   <p className="text-lg font-medium text-white">Estimados señores,</p>
                   
                   <p className="text-base sm:text-lg leading-relaxed">
-                    Representamos a <span className="font-bold text-brand-primary">GTL CONSULTING</span>, somos una empresa especializada en 
+                    <span className="font-bold text-brand-primary">GTL CONSULTING</span>, somos una empresa especializada en 
                     <span className="font-semibold text-white"> Logística y Gestión Aduanera</span>, con amplia experiencia en el proceso de 
                     <span className="font-bold text-brand-primary"> exportación de Valorados (oro)</span>.
                   </p>
